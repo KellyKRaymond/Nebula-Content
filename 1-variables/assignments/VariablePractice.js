@@ -145,13 +145,14 @@ console.log(10 === 10)
 // Comparing the two variables, are they loosely equal?
 
 console.log(10 == 10)
+//false
 
 // Log both to the console
 
 // Comparing our two prior variables, in one statement, are they both loosely equal and strictly equal?
-
+//They are Not - they are loosely equal
 // Comparing our two prior variables, in one statement, are they either loosely equal or strictly equal?
-
+//yes they are one of those
 // Create a variable and initilize it to 10, check if it is not loosely equal to 'ten' 
 
 // Create a variable and initilize it to true, check if it is not strictly equal to 'true' 
