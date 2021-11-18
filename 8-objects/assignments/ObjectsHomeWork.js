@@ -1,94 +1,72 @@
-// // 1.   Create an object for your dream vehicle
-const dreamVehicle = {}
-
-// //      Give it a minimum of 6 key-value pairs
+// 1.   Create an object for your dream vehicle
+// Give it a minimum of 6 key-value pairs 
+// this object should contain many datatypes (string, number, boolean, null, array)
 const dreamJeep = {
-make: 'Jeep Wrangler',
-color: 'White',
-engine: 'V8',
-transmission: 'Automatic',
-doors: 'four',
-entry: 'keyless'
+    make: 'Jeep Wrangler',
+    color: 'White',
+    engine: 'V8',
+    transmission: 'Automatic',
+    doors: 4 ,
+    gift: true
 }
 console.log(dreamJeep)
 
-// //      This object should contain many datatypes (string, number, boolean, null, array)
+// 2.   Using dot-notation Log to the console 3 properties from the previous object
 
-let newString = "Cool Jeep!"
+console.log(dreamJeep.make)
+console.log(dreamJeep.color)
+console.log(dreamJeep.doors)
 
-topspeed = 100
+// // 3.   Using bracket-notation Log to the console 3 properties from the previous object
+console.log(dreamJeep['doors'])
+console.log(dreamJeep['transmission'])
+console.log(dreamJeep['gift'])
 
-let x = "free"
-let y = "100,000"
-let statement = y < x ? "No, I don't want it"
+// // 4.   Try and log a property that doesn't already exist - what output do we get?
 
-//if(null){
- //   console.log("no i hate jeeps")
-//}
+console.log(dreamJeep.removableDoors) 
+//undefined
 
-//Object.keys(dreamVehicle).forEach((key)) => {
- //  dreamVehicle[key] = "Wrangler"
-//}
-//console.log(dreamVehicle)
-// // 2.   Using dot-notation Log to the console 3 properties from the previous object
-
-dreamJeep.tint = 'Tinted'
-dreamJeep.seats = 'Leather'
-dreamJeep.entertainment = 'Carplay'
-
-console.log(dreamJeep)
-
-// 3.   Using bracket-notation Log to the console 3 properties from the previous object
+// // 5.   Add a new key-value pair to the vehicle. 
 
 dreamJeep['accessories'] = 'Hula Girl'
 dreamJeep['steeringWheel'] = 'Fuzzy'
 dreamJeep['price'] = 'Free'
 
 console.log(dreamJeep)
-// 4.   Try and log a property that doesn't already exist - what output do we get?
 
-//I'm not exactly sure what this question is trying to get us to do - an error code?
-// console.log(RemovableDoors)
+// // 6.   Using bracket-notation update a property on the vehicle. 
 
-// 5.   Add a new key-value pair to the vehicle. 
-
-const newKeyValue = function(obj,key,value){
-    obj[value] = "Gold"
-    console.log(dreamJeep)
-}
-
-// 6.   Using bracket-notation update a property on the vehicle. 
-
-const updateObject = function(obj, key, value){
-    obj[key] = value
-}
-updateObject(dreamJeep, "amount of doors", "2")
+dreamJeep['color'] = 'Black'
 console.log(dreamJeep)
 
+// // 7.   Using dot-notation update a property on the vehicle. 
 
-// 7.   Using dot-notation update a property on the vehicle. 
-
-const updateObject = function(obj, key, value){
-    obj.key = value
-
-    updateObject(dreamJeep, "amount of doors", "2")
+dreamJeep.color = 'White'
 console.log(dreamJeep)
-}
-// 8.   Create a method for turning your vehicle on
 
-start: function(){
+// // 8.   Create a method for turning your vehicle on
+function startJeep(){
     console.log('Vroom Vroom');
 }
-// 9.   Create a method for turning your vehicle off
+    dreamJeep.start = startJeep
+    console.log(dreamJeep)
 
-stop: function(){
-    console.log('powering down');
+// // 9.   Create a method for turning your vehicle off
+function stopJeep(){
+    console.log('Turning Off');
 }
-//10.   
-//      a. Check if your vehicle is on (it should be off)
-//      b. Start your vehicle
-//      c. Check if your vehicle is on (it should be on)
-//      d. Stop your vehicle
-//      e. Check if your vehicle is on (it should be on)
+    dreamJeep.stop = stopJeep
+    console.log(dreamJeep)
 
-// wouldn't you just be running a console.log 
+// //10.   
+// //      a. Check if your vehicle is on (it should be off)
+console.log(dreamJeep.start)
+// //      b. Start your vehicle
+console.log(dreamJeep.start)
+// //      c. Check if your vehicle is on (it should be on)
+console.log(dreamJeep.start)
+// //      d. Stop your vehicle
+console.llg(dreamJeep.stop)
+// //      e. Check if your vehicle is on (it should be on)
+console.log(dreamJeep.start)
