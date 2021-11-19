@@ -1,0 +1,40 @@
+
+.aboutme {
+    background-color:darkturquoise
+}
+
+.intro {
+    color:darkgreen
+
+}
+#title{
+    height: 75px;
+    text-align: center;
+    color: blue;
+    background-color: rgb(151, 151, 173);
+    border-radius: 5px;
+    border: 6px solid rgb(91, 90, 100);
+}
+
+.link-section {
+    font-size: 400px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.travel-section {
+    font-size: 15px;
+    color:darkmagenta;
+    text-align: center;
+    background-image: 
+}
+
+
+
+
+
+
+
+
+
+
+
