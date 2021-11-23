@@ -1,0 +1,51 @@
+.blue-section {
+    height: 275px;
+    width: 1200px;
+    background-color: rgb(66,121,188);
+}
+.white-section {
+    height: 600px;
+    width: 1200px;
+    border: solid
+}
+.insidebox-section {
+    height: 400px;
+    width: 500px;
+    border: solid;
+    background-color: white;
+    text-align: center;
+    position:relative;
+    left: 300px;
+    top: -200px;
+}
+.insidebox-section h2{
+    color: rgb(66,121,188);
+    position:relative;
+    top: 30px;
+    font-family: sans-serif
+}
+.insidebox-section h5{
+    text-align: right;
+}
+.insidebox-section h6{
+    font-size: large;
+    color:white;
+    cursor:pointer;
+    background-color: rgb(66,121,188);
+}
+.insidebox-section h7{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    color: rgb(66,121,188);
+    cursor:pointer;
+}
+.insidebox-section h8 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+    color: rgb(66,121,188);
+    cursor:pointer;
+}
+.insidebox-section h10 {
+    color: rgb(66,121,188);
+    cursor:pointer;
+}
