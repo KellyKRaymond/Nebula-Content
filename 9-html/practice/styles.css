@@ -10,10 +10,19 @@
 #title{
     height: 75px;
     text-align: center;
-    color: blue;
+    text-shadow: darkorange;
+    color: rgb(0, 110, 255);
     background-color: rgb(151, 151, 173);
     border-radius: 5px;
-    border: 6px solid rgb(91, 90, 100);
+    border: 6px solid rgb(72, 52, 255);
+}
+
+.family-section {
+    font-size: 20px;
+    font-variant-caps: unicase;
+    text-align: center;
+    align-content: center;
+    
 }
 
 .link-section {
@@ -25,7 +34,6 @@
     font-size: 15px;
     color:darkmagenta;
     text-align: center;
-    background-image: 
 }
 
 

@@ -49,3 +49,8 @@
     color: rgb(66,121,188);
     cursor:pointer;
 }
+.container {
+    display:flex;
+    justify-content:space-between
+    
+}
