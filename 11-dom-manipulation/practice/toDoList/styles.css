@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+    font-size: large;
+    font-family: cursive;
+    color:darkblue;
+    margin-top: 250px;
+    background-repeat: no-repeat;
+    background-image: url('https://cdn.hipwallpaper.com/i/50/52/ZG9Ntj.jpg');
+}
+.to-dos {
+    margin-top: 30px;
+    font-size: large;
+    list-style-position: inside;
+}
+ol {
+    list-style: none;
+}
+
