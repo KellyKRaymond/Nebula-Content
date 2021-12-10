@@ -49,3 +49,5 @@ class Listening {
     this.comment.push({comment, Mom})
     }   
 }
+
+// use methods for listening / disipline
