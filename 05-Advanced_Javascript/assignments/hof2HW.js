@@ -42,16 +42,19 @@ console.log(calculating([1,2,3,4,5],power))
 
 const string = (string, func) => {
     const greeting = func(array);
+    const array = []
     return greeting
-}
-function countString = (greeting) =>{
-    
-    for(let i =0; i <string; i++)
+    for(let i =0; i < string.length; i++){
+    }
 
-}
+return string.length
 
+console.log(greeting('Howdy Partner!' , string))
 
-
+// count the amt of indexes 
+// count the amt of specific characters - aeiou
+// uppercase 
+// characters being the string og " "|| "!"
 
 
 
@@ -61,3 +64,22 @@ function countString = (greeting) =>{
 // 3.   Write a higher order function that minimizes a given list of numbers into one number
 //      Ex: minimizeNums(add, [2,3,5,8]) => 18
 //      Ex: minimizeNums(average, [5,8,12,15]) => 10
+
+const calculate = (array, func) => {
+    const calc = func(array);
+    return calc
+}
+function add(array){
+    let sum = 0
+    for(let i = 0; i < array.length; i++){
+        sum += array[i]
+    }
+    return sum
+}
+console.log(calculate([2,3,5,8], add ))
+
+
+// function findAverage (array){
+//     let average = []
+//     for(let i = 0; i < array.length; i++){
+//          // add them all up and divid by amt in array
