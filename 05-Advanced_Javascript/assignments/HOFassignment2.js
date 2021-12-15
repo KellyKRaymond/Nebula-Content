@@ -34,3 +34,5 @@ console.log(canDrink)
 const theString = 'this string contains a lot of letters and numbers 1 2 3 4 5 6'  
 const lettersAre = theString.split('').filter(char => char === a-zA-Z)
 console.log(lettersAre)
+
+// not sure how to completly solve the last one 
