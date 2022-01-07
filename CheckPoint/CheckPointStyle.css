@@ -1,0 +1,24 @@
+.GreenBox {
+    height: 295px;
+    width: 245px;
+    background-color: green;
+    border: solid;
+    position: relative;
+
+}
+.RedCircle {
+    height: 120px;
+    width: 120px ;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;   
+}
+.backgroundColor {
+    background-color: red;
+    background-color: #FF0000 ;
+    background-color: rgb(255, 0, 0);
+
+}

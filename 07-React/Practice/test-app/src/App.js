@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import AboutMe from './components/AboutMe/AboutMe.js';
-import Hobbies from './components/Hobbies/Hobbies.js';
-import Food from './components/Food/Food.js';
+import Profile from './components/Profile/Profile.js';
+import './App.css'
 
 function App() {
   const [name, setName] = useState("");
@@ -24,7 +23,7 @@ const [profile, setProfile] = useState()
   }
   return (
     <div> 
-          <form>
+          <form className = 'form'>
             <label>Name
                 <input
                 type="text" 

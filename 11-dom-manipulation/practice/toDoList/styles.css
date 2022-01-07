@@ -14,5 +14,7 @@ body {
 }
 ol {
     list-style: none;
+    font-size: larger;
+    color: red;
 }
 

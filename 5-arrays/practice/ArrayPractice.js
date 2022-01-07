@@ -23,9 +23,6 @@
 
 // answer: [5, 3, 2, 11, 9.6666666666666]
 
-
-
-
 //NEW SECTIONNNNNNNNNNNNNNNNNNNNNNNNN
 
 // Declare an empty array
@@ -118,5 +115,4 @@ console.log(nums.splice(5, 0, 6)
 // Create two arrays and, using JavaScript join them together
 
 .concat()
-
 // Create a multi-dimensional array
