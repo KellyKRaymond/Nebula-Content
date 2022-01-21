@@ -1,0 +1,13 @@
+#friends {
+    border: 2px solid cadetblue;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-family: serif;
+    background-color: #5f9ea05e;
+}
+
+#image {
+    width: 100px;
+    height: 200px;
+}
