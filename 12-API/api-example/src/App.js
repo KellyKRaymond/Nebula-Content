@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import { useState, useEffect } from 'react';
 import './App.css'
+import Friends from './components/Friends/Friends';
+
 
 function App() {
   const [data, setData] = useState({})
-
-  export default function friends(props) {
-    const { name, city, state, career, employed, age, image } = props.friends
 
   const json = `{
       "friends":[
@@ -65,37 +64,19 @@ function App() {
       ]
     }`
 
-  // useEffect(() => {
-  //   const data = JSON.parse(json);
-  //   setData(data)
-  // }, [])
+    useEffect(() => {
+      const data = JSON.parse(json) 
+      setData(data)
+    },[])
 
-  // const getData = async () => {
-
-  // }
-
-  //   return (
-  //     <div className='App'>
-  //       const data = JSON.parse(json);
-  //       {data.employees?.map(person => <h1> {person.name}</h1>)}
-  //     </div>
-  //   )
-  // }
-
-
+    console.log(data)
     return (
-      <div id='friends'>
-        <h1>Friends</h1>
-        <h1>{name}</h1>
-        <h1>{city}</h1>
-        <h1>{state}</h1>
-        <h1>{career}</h1>
-        <h1>{employed}</h1>
-        <h1>{age}</h1>
-        <h1>{image}</h1>
+      
+      <div>
+        {(data.friends || []).map(friends,i => {
+          <Friends friend = {friends} key={i}/> 
+          })}
       </div>
     )
-
-  }
-}
+    }
 export default App;
