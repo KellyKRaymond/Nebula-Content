@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import memeCard from '../components/memeCard'
 
 
 function App() {
