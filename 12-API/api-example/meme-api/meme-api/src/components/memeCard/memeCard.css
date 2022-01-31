@@ -1,14 +1,11 @@
-.App {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
 .memeCard {
-    max-height: 250px;
-    margin: 25px;
-    border-radius: 5px;
+    height: auto;
+    width: auto;
+    margin-top: 155px;
+    border-radius: 12px;
     box-shadow: 3px 4px 5px teal;
     overflow: hidden;
+    padding: 30px;
 }
 

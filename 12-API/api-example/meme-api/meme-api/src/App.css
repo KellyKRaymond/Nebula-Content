@@ -1,0 +1,6 @@
+.App {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 100, 42, 0.466);
+}
