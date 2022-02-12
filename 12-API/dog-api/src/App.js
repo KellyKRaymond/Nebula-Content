@@ -24,10 +24,13 @@ export default function App() {
             })
         })
         .then(res => res.json())
-        .then(console.log)
+        .then(res => {
+            if(!res.error)setToken(res.token)
+            else setAlert(res.error)
+        })
     }
-
-    return (
+        
+    if(!token) return (
         <div className="input">
             {/* <input type='text' placeholder="searching"></input>
             <input onChange={onChange}> */}
@@ -37,11 +40,20 @@ export default function App() {
             {/* <h1>{input}</h1> */}
             <div className='login'>
                 <h1> Welcome Clowns! </h1>
+                {alert && <h1>{alert}</h1>}
                 <input type='text' placeholder='User' onChange={onChange}></input>
                 <input type='password' placeholder='Password' onChange={onChange}></input>
                 <button onClick={login}> Sumbit </button>
+                <button onClick={''}> Clear</button>
             </div>
         </div>
 
     )
+    return <LoggedInPage/>
+}
+
+function LoggedInPage(){
+    return <div>
+        <h1>You Are Logged In</h1>
+    </div>
 }
