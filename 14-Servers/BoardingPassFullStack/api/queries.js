@@ -44,7 +44,7 @@ const addPassenger = (req, res) => {
 
 const deletePassenger = (request, results) => {
     const id = parseInt(request.params.id);
-    pool.query(`DELETE FROM people WHERE id = ${id})`, (error, results) => {
+    pool.query(`DELETE FROM passengers WHERE id = ${id})`, (error, results) => {
         if (error) {
             throw error;
         }
@@ -54,7 +54,7 @@ const deletePassenger = (request, results) => {
 
 const getPassenger = (req, res) => {
     const { id } = req.body;
-    pool.query("SElECT * FROM people WHERE id=$1", [id], async (error, results) => {
+    pool.query("SElECT * FROM passengers WHERE id=$1", [id], async (error, results) => {
         if (error) {
             throw error;
         }
@@ -65,7 +65,7 @@ const getPassenger = (req, res) => {
 const updatePassenger = (req, res) => {
     let { name, age, hometown, dreamvacation , id } = req.body;
     let myPromise = new Promise(function (resolve, reject) {
-        pool.query("SELECT * FROM passenger WHERE id=$1", [id], (error, results) => {
+        pool.query("SELECT * FROM passengers WHERE id=$1", [id], (error, results) => {
             if (error) {
                 throw error;
             } else if (res) {
@@ -84,9 +84,9 @@ const updatePassenger = (req, res) => {
     myPromise.then(() => {
         try {
             pool.query(
-                `UPDATE passenger 
-                         SET name=$1, age=$2, hometown=$3, dreamvaction =$4 WHERE id =$5;`,
-                [id, name, age, hometown, dreamvacation],
+                `UPDATE passengers 
+                         SET name=$1, age=$2, hometown=$3, dreamvacation =$4 WHERE id =$5;`,
+                [name, age, hometown, dreamvacation, id],
                 (error, results) => {
                     if (error) {
                         console.log(error, 'error here')
